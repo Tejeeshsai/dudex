@@ -131,7 +131,7 @@ export default function ProjectBoardPage() {
         <div className="relative">
           <div className="flex items-center gap-2 text-white/60 text-sm mb-3">
             <a href="/dashboard" className="hover:text-white transition-colors font-medium">Boards</a>
-            <span>></span>
+            <span>{'>'}</span>
             <span className="text-white font-semibold">{project?.name}</span>
           </div>
           <div className="flex items-end justify-between">
