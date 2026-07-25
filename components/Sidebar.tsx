@@ -27,7 +27,7 @@ export default function Sidebar() {
 
       const { data } = await supabase
         .from("projects")
-        .select("id, name")
+        .select("id, name, workspace_id, description, created_at")
         .eq("workspace_id", memberRows[0].workspace_id)
         .order("created_at", { ascending: false });
       setProjects(data ?? []);
